@@ -256,22 +256,22 @@ songgroups.append(cat)
 def buildLayout(songgroups, song):
     layout = [[],[]]
     layout[0].append([sg.Text("Where does", text_color="black", background_color='white', font='Courier 24'),
-                      sg.Button(song["Title"], key=song.get('id', '_'),font='Courier 24', button_color=albumcolors.get(song["Album"], DEFAULT_COLOR)),
+                      sg.Button(song["Title"], key=song.get('id', '_'),font='Courier 24', button_color=albumcolors.get(song["Album"], DEFAULT_COLOR), border_width=0),
                       sg.Text("belong?", font='Courier 24', background_color='white', text_color="black")])
     for sgi in range(len(songgroups)):
         songgroup = songgroups[sgi]
-        col = [[sg.Button(' '+str(sgi+1), font='Courier 24')]]
+        col = [[sg.Button(str(sgi+1), key=' '+str(sgi+1), font='Courier 24', border_width=0)]]
         for colsong in songgroup:
             songitem = []
             #songitem.append(sg.Image(filename='/Users/ctgray3/Desktop/TS.png'))
-            songitem.append(sg.Button(colsong["Title"], key=colsong.get('id', '_'), size=(32, 1), font='Courier 18', button_color=albumcolors.get(colsong["Album"], DEFAULT_COLOR), pad=(5,5)))
+            songitem.append(sg.Button(colsong["Title"], border_width=0, key=colsong.get('id', '_'), size=(32, 1), font='Courier 18', button_color=albumcolors.get(colsong["Album"], DEFAULT_COLOR), pad=(5,5)))
             col.append(songitem)
         layout[1].append(sg.Column(col,vertical_alignment="TOP", background_color='white'))
         layout[1].append(sg.VerticalSeparator())
-    col = [[sg.Button("new", font='Courier 24')]]
+    col = [[sg.Button("new", font='Courier 24', border_width=0)]]
     layout[1].append(sg.Column(col, vertical_alignment="TOP"))
     choices = [sg.Button("IDK", font='Courier 18', border_width=0),
-               sg.Button("save&quit", font='Courier 18')]
+               sg.Button("save&quit", font='Courier 18', border_width=0)]
     layout.append(choices)
     return layout
 

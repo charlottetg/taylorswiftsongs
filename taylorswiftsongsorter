@@ -33,7 +33,7 @@ allsongs = [
     {'Title': 'Tied Together with a Smile', 'Album': 'TS', 'spotify': True, 'id': '_6K0CJLVXqbGMeJSmJ4ENKK'}, 
     {'Title': 'Stay Beautiful', 'Album': 'TS', 'spotify': True, 'id': '_2ZoOmCSgj0ypVAmGd1ve4y'}, 
     {'Title': "Should've Said No", 'Album': 'TS', 'spotify': True, 'id': '_16MVSD0mGI4RMQT83Qzm69'}, 
-    {'Title': "Mary's Song (Oh My My My)", 'Album': 'TS', 'spotify': True, 'id': '_2QrQCMel6v2JiLxqrg4p2O'}, 
+    {'Title': "Mary's Song \n(Oh My My My)", 'Album': 'TS', 'spotify': True, 'id': '_2QrQCMel6v2JiLxqrg4p2O'}, 
     {'Title': 'Our Song', 'Album': 'TS', 'spotify': True, 'id': '_15DeqWWQB4dcEWzJg15VrN'}, 
     {'Title': "I'm Only Me When I'm With You", 'Album': 'TS', 'spotify': True, 'id': '_0JIdBrXGSJXS72zjF9ss9u'}, 
     {'Title': 'Invisible', 'Album': 'TS', 'spotify': True, 'id': '_5OOd01o2YS1QFwdpVLds3r'}, 
@@ -245,16 +245,14 @@ windowpos = ((width-windowsize[0])//2, (height-windowsize[1])//2)
 sg.SetOptions(background_color='white', window_location=windowpos)
 
 songgroups = []
-unsorted = allsongs
-cat = []
-for i in range(1):
-    n = random.randint(0, len(unsorted))
-    song = unsorted.pop(n)
-    cat.append(song)
-songgroups.append(cat)
+unsorted = allsongs.copy()
+
+n = random.randint(0, len(unsorted)-1)
+song = unsorted.pop(n)
+songgroups.append([song])
 
 def buildsongbutton(song):
-    return sg.Button(song['Title'], key=song.get('id', '_'), button_color='white', font='Courier 24', image_filename='buttonpngs/'+song["Album"]+'.png', border_width=0)
+    return sg.Button('     '+song['Title'], key=song.get('id', '_'), button_color='white', font='Courier 16', image_filename='buttonpngs/'+song["Album"]+'.png', image_subsample=5, border_width=0)
 
 def buildLayout(songgroups, song):
     layout = [[],[]]
@@ -270,11 +268,13 @@ def buildLayout(songgroups, song):
     layout[1].append(sg.Column(col, vertical_alignment="TOP"))
     choices = [sg.Button("IDK", font='Courier 18', border_width=0),
                sg.Button("save&quit", font='Courier 18', border_width=0)]
+    progressstring = "you've sorted " + str(len(allsongs)-len(unsorted)-1) + " of " + str(len(allsongs)) + " possible songs"
 
     layout.append(choices)
+    layout.append([sg.Text(progressstring, text_color='black', font='Courier 18', background_color='white')])
     return layout
 
-n = random.randint(0, len(unsorted))
+n = random.randint(0, len(unsorted)-1)
 screeninfo = get_monitors()[0]
 song = unsorted.pop(n)
 window = sg.Window("Taylor Swift Song Sorter", buildLayout(songgroups, song), size=windowsize)
@@ -302,7 +302,7 @@ while True:
             songgroups[int(event[1:]) - 1].append(song)
             #spotify_functions.open_song(event)
         window.close()
-        n = random.randint(0, len(unsorted))
+        n = random.randint(0, len(unsorted)-1)
         song = unsorted.pop(n)
         window=sg.Window("Taylor Swift Song Sorter", buildLayout(songgroups, song), size=windowsize)
 

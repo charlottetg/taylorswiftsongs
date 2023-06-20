@@ -23,19 +23,27 @@ albumcolors = {"TS": "#008F00",
                }
 DEFAULT_COLOR = "#7a7a7a"
 
+#eight spaces, then the name, then
 allsongs = [
+    {'Title': 'All Too Well (10 Minute Version)', 'Album': 'Red', 'spotify': True, 'id': '_5enxwA8aAbwZbf5qCHORXi', 'displaytitle':"        All Too Well\n        (10 Minute Version)"}, 
+    {'Title': "I'm Only Me When I'm With You", 'Album': 'TS', 'spotify': True, 'id': '_0JIdBrXGSJXS72zjF9ss9u', 'displaytitle': "        I'm Only Me When\n        I'm With You"},
+    {'Title': 'Dancing with Our Hands Tied', 'Album': 'reputation', 'spotify': True, 'id': '_7I7JbDv63ZJJsSi24DyJrz', 'displaytitle':'        Dancing with Our Hands\n        Tied'},
+    {'Title': 'We Are Never Ever Getting Back Together', 'Album': 'Red', 'spotify': True, 'id': '_5YqltLsjdqFtvqE7Nrysvs', 'displaytitle':"        We Are Never Ever Getting\n        Back Together"}, 
+    {'Title': "This Is Why We Can't Have Nice Things", 'Album': 'reputation', 'spotify': True, 'id': '_07NxDD1iKCHbAldceD7QLP', 'displaytitle':"        This Is Why We Can't\n        Have Nice Things"}, 
+    {'Title': 'Miss Americana & The Heartbreak Prince', 'Album': 'Lover', 'spotify': True, 'id': '_214nt20w5wOxJnY462klLw', 'displaytitle':"        Miss Americana & The\n        Heartbreak Prince"}, 
+    {'Title': 'the last great american dynasty', 'Album': 'folklore', 'spotify': True, 'id': '_2olxzvoFI9IpxqFeUv7WOX', 'displaytitle':"        the last great american\n        dynasty"}, 
+    {'Title': "Would've, Could've, Should've", 'Album': 'Midnights', 'spotify': True, 'id': '_4txojlesMFQZGWxwz2EeqB', 'displaytitle':"        Would've, Could've,\n        Should've"},
     {'Title': 'Tim McGraw', 'Album': 'TS', 'spotify': True, 'id': '_0Om9WAB5RS09L80DyOfTNa'}, 
     {'Title': 'Picture to Burn', 'Album': 'TS', 'spotify': True, 'id': '_32mVHdy0bi1XKgr0ajsBlG'}, 
-    {'Title': 'Teardrops on My Guitar', 'Album': 'TS', 'spotify': True, 'id': '_7zMcNqs55Mxer82bvZFkpg'}, 
+    {'Title': 'Teardrops on My Guitar', 'Album': 'TS', 'spotify': True, 'id': '_7zMcNqs55Mxer82bvZFkpg'},
     {'Title': 'A Place in This World', 'Album': 'TS', 'spotify': True, 'id': '_73OX8GdpOeGzKC6OvGSbsv'}, 
-    {'Title': 'Cold As You', 'Album': 'TS', 'spotify': True, 'id': '_7an1exwMnfYRcdVQm0yDev'}, 
+    {'Title': 'Cold As You', 'Album': 'TS', 'spotify': True, 'id': '_7an1exwMnfYRcdVQm0yDev'},
+    {'Title': "Mary's Song (Oh My My My)", 'Album': 'TS', 'spotify': True, 'id': '_2QrQCMel6v2JiLxqrg4p2O'},
     {'Title': 'The Outside', 'Album': 'TS', 'spotify': True, 'id': '_2QA3IixpRcKyOdG7XDzRgv'}, 
-    {'Title': 'Tied Together with a Smile', 'Album': 'TS', 'spotify': True, 'id': '_6K0CJLVXqbGMeJSmJ4ENKK'}, 
+    {'Title': 'Tied Together with a Smile', 'Album': 'TS', 'spotify': True, 'id': '_6K0CJLVXqbGMeJSmJ4ENKK'},
     {'Title': 'Stay Beautiful', 'Album': 'TS', 'spotify': True, 'id': '_2ZoOmCSgj0ypVAmGd1ve4y'}, 
     {'Title': "Should've Said No", 'Album': 'TS', 'spotify': True, 'id': '_16MVSD0mGI4RMQT83Qzm69'}, 
-    {'Title': "Mary's Song \n(Oh My My My)", 'Album': 'TS', 'spotify': True, 'id': '_2QrQCMel6v2JiLxqrg4p2O'}, 
     {'Title': 'Our Song', 'Album': 'TS', 'spotify': True, 'id': '_15DeqWWQB4dcEWzJg15VrN'}, 
-    {'Title': "I'm Only Me When I'm With You", 'Album': 'TS', 'spotify': True, 'id': '_0JIdBrXGSJXS72zjF9ss9u'}, 
     {'Title': 'Invisible', 'Album': 'TS', 'spotify': True, 'id': '_5OOd01o2YS1QFwdpVLds3r'}, 
     {'Title': 'A Perfectly Good Heart', 'Album': 'TS', 'spotify': True, 'id': '_1spLfUJxtyVyiKKTegQ2r4'}, 
     {'Title': 'I Heart ?', 'Album': 'TS', 'spotify': False}, 
@@ -57,7 +65,7 @@ allsongs = [
     {'Title': 'Come In with the Rain', 'Album': 'Fearless', 'spotify': True, 'id': '_1n2wszmJyVkw6FHqyLnQsY'}, 
     {'Title': 'Superstar', 'Album': 'Fearless', 'spotify': True, 'id': '_51A8eKvvZz9uydvIZ7xRSV'}, 
     {'Title': 'The Other Side of the Door', 'Album': 'Fearless', 'spotify': True, 'id': '_1cSFlSBdpT4F5vb1frQ231'}, 
-    {'Title': 'Today Was  Fairytale', 'Album': 'Fearless', 'spotify': True, 'id': '_2JoJrsEV15OzbijS47lids'}, 
+    {'Title': 'Today Was a Fairytale', 'Album': 'Fearless', 'spotify': True, 'id': '_2JoJrsEV15OzbijS47lids'}, 
     {'Title': 'You All Over Me', 'Album': 'Fearless', 'spotify': True, 'id': '_4CHpVfAhuxNJ3ibExe6kxO'}, 
     {'Title': 'Mr. Perfectly Fine', 'Album': 'Fearless', 'spotify': True, 'id': '_2CYVETnhM9aytqrazYYwrK'}, 
     {'Title': 'We Were Happy', 'Album': 'Fearless', 'spotify': True, 'id': '_34V9RiEPe8MNdU32qJsJa1'}, 
@@ -90,10 +98,8 @@ allsongs = [
     {'Title': 'Red', 'Album': 'Red', 'spotify': True, 'id': '_4OAuvHryIVv4kMDNSLuPt6'}, 
     {'Title': 'Treacherous', 'Album': 'Red', 'spotify': True, 'id': '_3S7HNKPakdwNEBFIVTL6dZ'}, 
     {'Title': 'I Knew You Were Trouble', 'Album': 'Red', 'spotify': True, 'id': '_6AtZLIzUINvExIUy4QhdjP'}, 
-    {'Title': 'All Too Well (10 Minute Version)', 'Album': 'Red', 'spotify': True, 'id': '_5enxwA8aAbwZbf5qCHORXi'}, 
     {'Title': '22', 'Album': 'Red', 'spotify': True, 'id': '_3yII7UwgLF6K5zW3xad3MP'}, 
     {'Title': 'I Almost Do', 'Album': 'Red', 'spotify': True, 'id': '_2r9CbjYgFhtAmcFv1cSquB'}, 
-    {'Title': 'We Are Never Ever Getting Back Together', 'Album': 'Red', 'spotify': True, 'id': '_5YqltLsjdqFtvqE7Nrysvs'}, 
     {'Title': 'Stay Stay Stay', 'Album': 'Red', 'spotify': True, 'id': '_7eQj6r5PIdYKEIZjucBMcq'}, 
     {'Title': 'The Last Time', 'Album': 'Red', 'spotify': True, 'id': '_0y6kdSRCVQhSsHSpWvTUm7'}, 
     {'Title': 'Holy Ground', 'Album': 'Red', 'spotify': True, 'id': '_7J4b3LVCIGO4CMBDFLPoP6'}, 
@@ -139,10 +145,8 @@ allsongs = [
     {'Title': 'So It Goes...', 'Album': 'reputation', 'spotify': True, 'id': '_5PxFv9yJEg9dxvbZggykro'}, 
     {'Title': 'Gorgeous', 'Album': 'reputation', 'spotify': True, 'id': '_1ZY1PqizIl78geGM4xWlEA'}, 
     {'Title': 'Getaway Car', 'Album': 'reputation', 'spotify': True, 'id': '_0VE4kBnHJUgtMf0dy6DRmW'}, 
-    {'Title': 'King of My Heart', 'Album': 'reputation', 'spotify': True, 'id': '_7HuBDWi18s4aJM8UFnNheH'}, 
-    {'Title': 'Dancing with Our Hands Tied', 'Album': 'reputation', 'spotify': True, 'id': '_7I7JbDv63ZJJsSi24DyJrz'}, 
+    {'Title': 'King of My Heart', 'Album': 'reputation', 'spotify': True, 'id': '_7HuBDWi18s4aJM8UFnNheH'},
     {'Title': 'Dress', 'Album': 'reputation', 'spotify': True, 'id': '_6oVxXO5oQ4pTpO8RSnkzvv'}, 
-    {'Title': "This Is Why We Can't Have Nice Things", 'Album': 'reputation', 'spotify': True, 'id': '_07NxDD1iKCHbAldceD7QLP'}, 
     {'Title': 'Call It What You Want', 'Album': 'reputation', 'spotify': True, 'id': '_1GwMQaZz6Au3QLDbjbMdme'},
     {'Title': "New Year's Day", 'Album': 'reputation', 'spotify': True, 'id': '_7F5oktn5YOsR9eR5YsFtqb'}, 
     {'Title': 'I Forgot That You Existed', 'Album': 'Lover', 'spotify': True, 'id': '_43rA71bccXFGD4C8GOpIlN'}, 
@@ -151,7 +155,6 @@ allsongs = [
     {'Title': 'The Man', 'Album': 'Lover', 'spotify': True, 'id': '_3RauEVgRgj1IuWdJ9fDs70'}, 
     {'Title': 'The Archer', 'Album': 'Lover', 'spotify': True, 'id': '_3pHkh7d0lzM2AldUtz2x37'}, 
     {'Title': 'I Think He Knows', 'Album': 'Lover', 'spotify': True, 'id': '_2YWtcWi3a83pdEg3Gif4Pd'}, 
-    {'Title': 'Miss Americana & The Heartbreak Prince', 'Album': 'Lover', 'spotify': True, 'id': '_214nt20w5wOxJnY462klLw'}, 
     {'Title': 'Paper Rings', 'Album': 'Lover', 'spotify': True, 'id': '_4y5bvROuBDPr5fuwXbIBZR'}, 
     {'Title': 'Cornelia Street', 'Album': 'Lover', 'spotify': True, 'id': '_12M5uqx0ZuwkpLp5rJim1a'}, 
     {'Title': 'Death by a Thousand Cuts', 'Album': 'Lover', 'spotify': True, 'id': '_2dgFqt3w9xIQRjhPtwNk3D'}, 
@@ -165,7 +168,6 @@ allsongs = [
     {'Title': 'Daylight', 'Album': 'Lover', 'spotify': True, 'id': '_1fzAuUVbzlhZ1lJAx9PtY6'}, 
     {'Title': 'the 1', 'Album': 'folklore', 'spotify': True, 'id': '_4pfrrhvplbJZAIsfosGWQP'}, 
     {'Title': 'cardigan', 'Album': 'folklore', 'spotify': True, 'id': '_0KRYCBwIpWYFNrXOmXbyUh'}, 
-    {'Title': 'the last great american dynasty', 'Album': 'folklore', 'spotify': True, 'id': '_2olxzvoFI9IpxqFeUv7WOX'}, 
     {'Title': 'exile', 'Album': 'folklore', 'spotify': True, 'id': '_5S4aYQAJOwJMAamANWlICO'}, 
     {'Title': 'my tears ricochet', 'Album': 'folklore', 'spotify': True, 'id': '_5P2bHCDM2tsgIaYWsZMhu5'}, 
     {'Title': 'mirrorball', 'Album': 'folklore', 'spotify': True, 'id': '_2I8YAEA1VmCuP1wkJHMpTw'}, 
@@ -215,7 +217,6 @@ allsongs = [
     {'Title': 'Paris', 'Album': 'Midnights', 'spotify': True, 'id': '_5tWxKWq1DSP1s9WQ5PWuqu'}, 
     {'Title': 'High Infidelity', 'Album': 'Midnights', 'spotify': True, 'id': '_1SztNGCwEHJEVFx90E5g7D'}, 
     {'Title': 'Glitch', 'Album': 'Midnights', 'spotify': True, 'id': '_7C0w28EsX0Um2FrZs9gso2'}, 
-    {'Title': "Would've, Could've, Should've", 'Album': 'Midnights', 'spotify': True, 'id': '_4txojlesMFQZGWxwz2EeqB'}, 
     {'Title': 'Dear Reader', 'Album': 'Midnights', 'spotify': True, 'id': '_10GRRCR5fctuOF4GFmATJI'}, 
     {'Title': 'Hits Different', 'Album': 'Midnights', 'spotify': True, 'id': '_3xYJScVfxByb61dYHTwiby'}, 
     {'Title': 'Carolina', 'Album': 'none', 'spotify': True, 'id': '_4axSuOg3BqsowKjRpj59RU'}, 
@@ -237,7 +238,6 @@ allsongs = [
     {'Title': 'The Alcott', 'Album': 'none', 'spotify': True, 'id': '_6INztpNwOTlfSKTuPo0HOP'}
                ]
 
-
 width = get_monitors()[0].width 
 height = get_monitors()[0].height
 windowsize = (int(width*.66), int(height*.66))
@@ -252,26 +252,39 @@ song = unsorted.pop(n)
 songgroups.append([song])
 
 def buildsongbutton(song):
-    return sg.Button('     '+song['Title'], key=song.get('id', '_'), button_color='white', font='Courier 16', image_filename='buttonpngs/'+song["Album"]+'.png', image_subsample=5, border_width=0)
+    adds = ''
+    if song['Album']!='none':
+        adds = '        '
+    return sg.Button(song.get('displaytitle', adds+song['Title']), button_color=('white', 'white'),key=song.get('id', '_'), pad=(0, 0),font='Courier 16', image_filename='buttonpngs/'+song["Album"]+'.png', image_subsample=4, border_width=0)
 
-def buildLayout(songgroups, song):
-    layout = [[],[]]
-    layout[0].append([sg.Text("Where does", text_color="black", background_color='white', font='Courier 24'), buildsongbutton(song), sg.Text("belong?", font='Courier 24', background_color='white', text_color="black")])
+def buildColumns(songgroups):
+    cols = []
     for sgi in range(len(songgroups)):
         songgroup = songgroups[sgi]
-        col = [[sg.Button(str(sgi+1), key=' '+str(sgi+1), font='Courier 24', border_width=0)]]
+        col = [[sg.Button(str(sgi+1), key=' '+str(sgi+1), font='Courier 24', border_width=0, size=(25,1))]]
         for colsong in songgroup:
             col.append([buildsongbutton(colsong)])
-        layout[1].append(sg.Column(col,vertical_alignment="TOP", background_color='white'))
-        layout[1].append(sg.VerticalSeparator())
-    col = [[sg.Button("new", font='Courier 24', border_width=0)]]
-    layout[1].append(sg.Column(col, vertical_alignment="TOP"))
-    choices = [sg.Button("IDK", font='Courier 18', border_width=0),
-               sg.Button("save&quit", font='Courier 18', border_width=0)]
-    progressstring = "you've sorted " + str(len(allsongs)-len(unsorted)-1) + " of " + str(len(allsongs)) + " possible songs"
+        cols.append(sg.Column(col,vertical_alignment="TOP", background_color='white'))
+        #cols.append(sg.VerticalSeparator())
+    col = [[sg.Button("new", size=(25,1), font='Courier 24', border_width=0)]]
+    cols.append(sg.Column(col, vertical_alignment="TOP"))
+    return cols
 
-    layout.append(choices)
-    layout.append([sg.Text(progressstring, text_color='black', font='Courier 18', background_color='white')])
+def buildLayout(songgroups, song=''):
+    layout = [[],[], [], []]
+    if song != '':
+        layout[0] = [sg.Text("Where does", text_color="black", background_color='white', font='Courier 24'), buildsongbutton(song), sg.Text("belong?", font='Courier 24', background_color='white', text_color="black"), ]
+        layout[1] = buildColumns(songgroups)
+        layout[2] = [sg.Button("IDK this song", font='Courier 18', border_width=0), sg.Button("save&quit", font='Courier 18', border_width=0)]
+        progressstring = "you've sorted " + str(len(allsongs)-len(unsorted)-1) + " of " + str(len(allsongs)) + " possible songs"
+    else:
+        layout[0] = [sg.Text("All done!", text_color="black", background_color='white', font='Courier 24')]
+        layout[1] = buildColumns(songgroups)[:-1]
+        layout[2] = [sg.Button("save&quit", font='Courier 18', border_width=0)]
+        progressstring = "you've sorted all " + str(len(allsongs)) + " songs"
+    
+    layout[3] = [sg.Text(progressstring, text_color='black', font='Courier 18', background_color='white')]
+
     return layout
 
 n = random.randint(0, len(unsorted)-1)
@@ -291,7 +304,7 @@ while True:
         if event!='_':
             spotify_functions.open_song(event[1:])
     else:
-        if event=="IDK":
+        if event=="IDK this song":
             print("didn't know the song")
         elif event=="new":
             songgroups.append([song])
@@ -302,8 +315,11 @@ while True:
             songgroups[int(event[1:]) - 1].append(song)
             #spotify_functions.open_song(event)
         window.close()
-        n = random.randint(0, len(unsorted)-1)
-        song = unsorted.pop(n)
-        window=sg.Window("Taylor Swift Song Sorter", buildLayout(songgroups, song), size=windowsize)
+        if len(unsorted)==0:
+            window=sg.Window("Taylor Swift Song Sorter", buildLayout(songgroups), size=windowsize)
+        else:
+            n = random.randint(0, len(unsorted)-1)
+            song = unsorted.pop(n)
+            window=sg.Window("Taylor Swift Song Sorter", buildLayout(songgroups, song=song), size=windowsize)
 
 window.close()

@@ -19,26 +19,6 @@ albumids = {'TS': '7mzrIsaAjnXihW3InKjlC3',
             'Midnights': '1fnJ7k0bllNfL1kVdNVW1A'
             }
 
-"""
-def prepare_spotify_query(song):
-    song_name = song['Title']
-    album_name = song['Album']
-    album_id = albumids.get(album_name, '')
-    query_base = f"%20track:{song_name.replace(' ', '%20')}%20artist:06HL4z0CvFAxyc27GXpf02%20album:{album_id}%20"
-    return query_base
-"""
-def songid(song):
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIFY_ID, client_secret=SPOTIFY_SECRET))
-    album = song['Album']
-    if album=='none':
-        return(song['id'])
-    elif song.get('spotify', True)==False:
-        return 'sad'
-    else:
-        s = sp.album_tracks(album_id=albumids[album])['items'][song['index']-1]
-        #print(s['preview_url'])
-        return s['id']
-
 def open_song(songid):
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIFY_ID,
                                                                client_secret=SPOTIFY_SECRET))

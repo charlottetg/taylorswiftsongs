@@ -7,32 +7,40 @@ SPOTIFY_ID = '78c4c1fc79184a1d88c9b737eb10c00a'
 SPOTIFY_SECRET = '324b59e085114c728947f7a4ab2f2481'
 redirect_uri = 'http://google.com/callback/'
 
+albumids = {'TS': '7mzrIsaAjnXihW3InKjlC3',
+            'Fearless': '4hDok0OAJd57SGIT8xuWJH',
+            'Speak Now': '5EpMjweRD573ASl7uNiHym',
+            'Red': '6kZ42qRrzov54LcAk4onW9',
+            '1989': '34OkZVpuzBa9y40DCy0LPR',
+            'reputation': '6DEjYFkNZh67HP7R9PSZvv',
+            'Lover': '1NAmidJlEaVgA3MpcPFYGq',
+            'folklore': '1pzvBxYgT6OVwJLtHkrdQK',
+            'evermore': '6AORtDjduMM3bupSWzbTSG',
+            'Midnights': '1fnJ7k0bllNfL1kVdNVW1A'
+            }
 
+"""
 def prepare_spotify_query(song):
     song_name = song['Title']
     album_name = song['Album']
-    if album_name == 'Red' or album_name == 'Fearless':
-        song_name = song_name + ' (Taylor\'s Version)'
-        album_name = album_name + ' (Taylor\'s Version)'
-    query_base = f"%20track:{song_name.replace(' ', '%20')}%20artist:Taylor%20Swift%20"
-    try:
-        song_feature = song['ft']
-        if song["Album"] == 'none':
-            return f"{query_base}{song_feature.replace(' ', '%20')}"
-        else:
-            return f"{query_base}{song_feature.replace(' ', '%20')}%20album:{album_name.replace(' ', '%20')}"
-    except:
-        return f"{query_base}album:{album_name.replace(' ', '%20')}"
+    album_id = albumids.get(album_name, '')
+    query_base = f"%20track:{song_name.replace(' ', '%20')}%20artist:06HL4z0CvFAxyc27GXpf02%20album:{album_id}%20"
+    return query_base
+"""
+def songid(song):
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIFY_ID, client_secret=SPOTIFY_SECRET))
+    album = song['Album']
+    if album=='none':
+        return(song['id'])
+    elif song.get('spotify', True)==False:
+        return 'sad'
+    else:
+        s = sp.album_tracks(album_id=albumids[album])['items'][song['index']-1]
+        #print(s['preview_url'])
+        return s['id']
 
-
-def open_song(song='', query=''):
+def open_song(songid):
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIFY_ID,
                                                                client_secret=SPOTIFY_SECRET))
-    if query == '':
-        query = prepare_spotify_query(song)
-    results = sp.search(query, 1, 0, "track")
-    try:
-        webbrowser.open(results['tracks']['items'][0]['external_urls']['spotify'], new=0)
-        return 'Opened in new tab'
-    except:
-        return f'No results for {query}'
+    link =sp.track(track_id=songid)['external_urls']['spotify']
+    webbrowser.open(link, new=0)

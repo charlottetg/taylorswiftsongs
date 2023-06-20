@@ -10,12 +10,242 @@ SPOTIFY_ID = '78c4c1fc79184a1d88c9b737eb10c00a'
 SPOTIFY_SECRET = '324b59e085114c728947f7a4ab2f2481'
 redirect_uri = 'http://google.com/callback/'
 
-
-albumcolors = {"Taylor Swift": "#008F00", "Fearless":"#F6CE46", "Speak Now":"#9437FF", "Red":"#FF2600", "1989":"#5AC4F6", "reputation":"#000000", "Lover":"#EB539F", "folklore":"#BFBFBF", "evermore":"#BF6F02", "Midnights":"#011993"}
+albumcolors = {"TS": "#008F00", 
+               "Fearless":"#F6CE46", 
+               "Speak Now":"#9437FF", 
+               "Red":"#FF2600", 
+               "1989":"#5AC4F6", 
+               "reputation":"#000000", 
+               "Lover":"#EB539F", 
+               "folklore":"#BFBFBF", 
+               "evermore":"#BF6F02", 
+               "Midnights":"#011993"
+               }
 DEFAULT_COLOR = "#7a7a7a"
 
 allsongs = [
-     {'Title': 'Tim McGraw', 'Album': 'Taylor Swift'}, {'Title': 'Picture to Burn', 'Album': 'Taylor Swift'}, {'Title': 'Teardrops on My Guitar', 'Album': 'Taylor Swift'}, {'Title': 'A Place in This World', 'Album': 'Taylor Swift'}, {'Title': 'Cold As You', 'Album': 'Taylor Swift'}, {'Title': 'The Outside', 'Album': 'Taylor Swift'}, {'Title': 'Tied Together with a Smile', 'Album': 'Taylor Swift'}, {'Title': 'Stay Beautiful', 'Album': 'Taylor Swift'}, {'Title': "Should've Said No", 'Album': 'Taylor Swift'}, {'Title': "Mary's Song (Oh My My My)", 'Album': 'Taylor Swift'}, {'Title': 'Our Song', 'Album': 'Taylor Swift'}, {'Title': "I'm Only Me When I'm With You", 'Album': 'Taylor Swift', 'bonus': True}, {'Title': 'Invisible', 'Album': 'Taylor Swift', 'bonus': True}, {'Title': 'A Perfectly Good Heart', 'Album': 'Taylor Swift', 'bonus': True}, {'Title': 'I Heart ?', 'Album': 'Taylor Swift', 'bonus': True}, {'Title': 'Fearless', 'Album': 'Fearless'}, {'Title': 'Fifteen', 'Album': 'Fearless'}, {'Title': 'Love Story', 'Album': 'Fearless'}, {'Title': 'Hey Stephen', 'Album': 'Fearless'}, {'Title': 'White Horse', 'Album': 'Fearless'}, {'Title': 'You Belong with Me', 'Album': 'Fearless'}, {'Title': 'Breathe', 'Album': 'Fearless', 'ft': 'Colbie Caillat'}, {'Title': 'Tell Me Why', 'Album': 'Fearless'}, {'Title': "You're Not Sorry", 'Album': 'Fearless'}, {'Title': 'The Way I Loved You', 'Album': 'Fearless'}, {'Title': 'Forever & Always', 'Album': 'Fearless'}, {'Title': 'The Best Day', 'Album': 'Fearless'}, {'Title': 'Change', 'Album': 'Fearless'}, {'Title': 'Jump Then Fall', 'Album': 'Fearless', 'bonus': True}, {'Title': 'Untouchable', 'Album': 'Fearless', 'bonus': True}, {'Title': 'Come In with the Rain', 'Album': 'Fearless', 'bonus': True}, {'Title': 'Superstar', 'Album': 'Fearless', 'bonus': True}, {'Title': 'The Other Side of the Door', 'Album': 'Fearless', 'bonus': True}, {'Title': 'Today Was  Fairytale', 'Album': 'Fearless', 'bonus': True}, {'Title': 'If This Was a Movie', 'Album': 'Fearless', 'bonus': True}, {'Title': 'You All Over Me', 'Album': 'Fearless', 'ft': 'Maren Morris', 'vault': True}, {'Title': 'Mr. Perfectly Fine', 'Album': 'Fearless', 'vault': True}, {'Title': 'We Were Happy', 'Album': 'Fearless', 'vault': True}, {'Title': "That's When", 'Album': 'Fearless', 'ft': 'Keith Urban', 'vault': True}, {'Title': "Don't You", 'Album': 'Fearless', 'vault': True}, {'Title': 'Bye Bye Baby', 'Album': 'Fearless', 'vault': True}, {'Title': 'Mine', 'Album': 'Speak Now'}, {'Title': 'Sparks Fly', 'Album': 'Speak Now'}, {'Title': 'Back to December', 'Album': 'Speak Now'}, {'Title': 'Speak Now', 'Album': 'Speak Now'}, {'Title': 'Dear John', 'Album': 'Speak Now'}, {'Title': 'Mean', 'Album': 'Speak Now'}, {'Title': 'The Story of Us', 'Album': 'Speak Now'}, {'Title': 'Never Grow Up', 'Album': 'Speak Now'}, {'Title': 'Enchanted', 'Album': 'Speak Now'}, {'Title': 'Better than Revenge', 'Album': 'Speak Now'}, {'Title': 'Innocent', 'Album': 'Speak Now'}, {'Title': 'Haunted', 'Album': 'Speak Now'}, {'Title': 'Last Kiss', 'Album': 'Speak Now'}, {'Title': 'Long Live', 'Album': 'Speak Now'}, {'Title': 'Ours', 'Album': 'Speak Now', 'bonus': True}, {'Title': 'Superman', 'Album': 'Speak Now', 'bonus': True}, {'Title': 'Electric Touch', 'Album': 'Speak Now', 'ft': 'Fall Out Boy', 'vault': True}, {'Title': 'When Emma Falls In Love', 'Album': 'Speak Now', 'vault': True}, {'Title': 'I Can See You', 'Album': 'Speak Now', 'vault': True}, {'Title': 'Castles Crumbling', 'Album': 'Speak Now', 'ft': 'Paramore', 'vault': True}, {'Title': 'Foolish One', 'Album': 'Speak Now', 'vault': True}, {'Title': 'Timeless', 'Album': 'Speak Now', 'vault': True}, {'Title': 'State of Grace', 'Album': 'Red'}, {'Title': 'Red', 'Album': 'Red'}, {'Title': 'Treacherous', 'Album': 'Red'}, {'Title': 'I Knew You Were Trouble', 'Album': 'Red'}, {'Title': 'All Too Well (10 Minute Version)', 'Album': 'Red'}, {'Title': '22', 'Album': 'Red'}, {'Title': 'I Almost Do', 'Album': 'Red'}, {'Title': 'We Are Never Ever Getting Back Together', 'Album': 'Red'}, {'Title': 'Stay Stay Stay', 'Album': 'Red'}, {'Title': 'The Last Time', 'Album': 'Red', 'ft': 'Gary Lightbody'}, {'Title': 'Holy Ground', 'Album': 'Red'}, {'Title': 'Sad Beautiful Tragic', 'Album': 'Red'}, {'Title': 'The Lucky One', 'Album': 'Red'}, {'Title': 'Everything Has Changed', 'Album': 'Red', 'ft': 'Ed Sheeran'}, {'Title': 'Starlight', 'Album': 'Red'}, {'Title': 'Begin Again', 'Album': 'Red'}, {'Title': 'The Moment I Knew', 'Album': 'Red', 'bonus': True}, {'Title': 'Come Back... Be Here', 'Album': 'Red', 'bonus': True}, {'Title': 'Girl at Home', 'Album': 'Red', 'bonus': True}, {'Title': 'Ronan', 'Album': 'Red', 'bonus': True}, {'Title': 'Better Man', 'Album': 'Red', 'vault': True}, {'Title': 'Nothing New', 'Album': 'Red', 'ft': 'Phoebe Bridgers', 'vault': True}, {'Title': 'Babe', 'Album': 'Red', 'vault': True}, {'Title': 'Message in a Bottle', 'Album': 'Red', 'vault': True}, {'Title': 'I Bet You Think About Me', 'Album': 'Red', 'ft': 'Chris Stapleton', 'vault': True}, {'Title': 'Forever Winter', 'Album': 'Red', 'vault': True}, {'Title': 'Run', 'Album': 'Red', 'ft': 'Ed Sheeran', 'vault': True}, {'Title': 'The Very First Night', 'Album': 'Red', 'vault': True}, {'Title': 'Welcome to New York', 'Album': '1989'}, {'Title': 'Blank Space', 'Album': '1989'}, {'Title': 'Style', 'Album': '1989'}, {'Title': 'Out of the Woods', 'Album': '1989'}, {'Title': 'All You Had to Do Was Stay', 'Album': '1989'}, {'Title': 'Shake it Off', 'Album': '1989'}, {'Title': 'I Wish You Would', 'Album': '1989'}, {'Title': 'Bad Blood', 'Album': '1989'}, {'Title': 'Wildest Dreams', 'Album': '1989'}, {'Title': 'How You Get the Girl', 'Album': '1989'}, {'Title': 'This Love', 'Album': '1989'}, {'Title': 'I Know Places', 'Album': '1989'}, {'Title': 'Clean', 'Album': '1989'}, {'Title': 'Wonderland', 'Album': '1989', 'bonus': True}, {'Title': 'You Are in Love', 'Album': '1989', 'bonus': True}, {'Title': 'New Romantics', 'Album': '1989', 'bonus': True}, {'Title': 'Ready for It?', 'Album': 'reputation'}, {'Title': 'End Game', 'Album': 'reputation', 'ft': 'Ed Sheeran'}, {'Title': 'I Did Something Bad', 'Album': 'reputation'}, {'Title': "Don't Blame Me", 'Album': 'reputation'}, {'Title': 'Delicate', 'Album': 'reputation'}, {'Title': 'Look What You Made Me Do', 'Album': 'reputation'}, {'Title': 'So It Goes...', 'Album': 'reputation'}, {'Title': 'Gorgeous', 'Album': 'reputation'}, {'Title': 'Getaway Car', 'Album': 'reputation'}, {'Title': 'King of My Heart', 'Album': 'reputation'}, {'Title': 'Dancing with Our Hands Tied', 'Album': 'reputation'}, {'Title': 'Dress', 'Album': 'reputation'}, {'Title': "This Is Why We Can't Have Nice Things", 'Album': 'reputation'}, {'Title': 'Call It What You Want', 'Album': 'reputation'}, {'Title': "New Year's Day", 'Album': 'reputation'}, {'Title': 'I Forgot That You Existed', 'Album': 'Lover'}, {'Title': 'Cruel Summer', 'Album': 'Lover'}, {'Title': 'Lover', 'Album': 'Lover'}, {'Title': 'The Man', 'Album': 'Lover'}, {'Title': 'The Man', 'Album': 'Lover'}, {'Title': 'The Archer', 'Album': 'Lover'}, {'Title': 'I Think He Knows', 'Album': 'Lover'}, {'Title': 'Miss Americana & The Heartbreak Prince', 'Album': 'Lover'}, {'Title': 'Paper Rings', 'Album': 'Lover'}, {'Title': 'Cornelia Street', 'Album': 'Lover'}, {'Title': 'Death by a Thousand Cuts', 'Album': 'Lover'}, {'Title': 'London Boy', 'Album': 'Lover'}, {'Title': "Soon You'll Get Better", 'Album': 'Lover', 'ft': 'The Chicks'}, {'Title': 'False God', 'Album': 'Lover'}, {'Title': 'You Need to Calm Down', 'Album': 'Lover'}, {'Title': 'Afterglow', 'Album': 'Lover'}, {'Title': 'ME!', 'Album': 'Lover', 'ft': 'Brendan Urie'}, {'Title': "It's Nice to Have a Friend", 'Album': 'Lover'}, {'Title': 'Daylight', 'Album': 'Lover'}, {'Title': 'the 1', 'Album': 'folklore'}, {'Title': 'cardigan', 'Album': 'folklore'}, {'Title': 'the last great american dynasty', 'Album': 'folklore'}, {'Title': 'exile', 'Album': 'folklore', 'ft': 'Bon Iver'}, {'Title': 'my tears ricochet', 'Album': 'folklore'}, {'Title': 'mirrorball', 'Album': 'folklore'}, {'Title': 'seven', 'Album': 'folklore'}, {'Title': 'august', 'Album': 'folklore'}, {'Title': 'this is me trying', 'Album': 'folklore'}, {'Title': 'illicit affairs', 'Album': 'folklore'}, {'Title': 'invisible string', 'Album': 'folklore'}, {'Title': 'mad woman', 'Album': 'folklore'}, {'Title': 'epiphany', 'Album': 'folklore'}, {'Title': 'betty', 'Album': 'folklore'}, {'Title': 'peace', 'Album': 'folklore'}, {'Title': 'hoax', 'Album': 'folklore'}, {'Title': 'the lakes', 'Album': 'folklore', 'bonus': True}, {'Title': 'willow', 'Album': 'evermore'}, {'Title': 'champagne problems', 'Album': 'evermore'}, {'Title': 'gold rush', 'Album': 'evermore'}, {'Title': "'tis the damn season", 'Album': 'evermore'}, {'Title': 'tolerate it', 'Album': 'evermore'}, {'Title': 'no body, no crime', 'Album': 'evermore', 'ft': 'HAIM'}, {'Title': 'happiness', 'Album': 'evermore'}, {'Title': 'dorothea', 'Album': 'evermore'}, {'Title': 'coney island', 'Album': 'evermore', 'ft': 'The National'}, {'Title': 'ivy', 'Album': 'evermore'}, {'Title': 'cowboy like me', 'Album': 'evermore'}, {'Title': 'long story short', 'Album': 'evermore'}, {'Title': 'marjorie', 'Album': 'evermore'}, {'Title': 'closure', 'Album': 'evermore'}, {'Title': 'evermore', 'Album': 'evermore', 'ft': 'Bon Iver'}, {'Title': 'right where you left me', 'Album': 'evermore', 'bonus': True}, {'Title': "it's time to go", 'Album': 'evermore', 'bonus': True}, {'Title': 'Lavender Haze', 'Album': 'Midnights'}, {'Title': 'Maroon', 'Album': 'Midnights'}, {'Title': 'Anti-Hero', 'Album': 'Midnights'}, {'Title': 'Snow On The Beach', 'Album': 'Midnights'}, {'Title': "You're On Your Own, Kid", 'Album': 'Midnights'}, {'Title': 'Midnight Rain', 'Album': 'Midnights'}, {'Title': 'Question...?', 'Album': 'Midnights'}, {'Title': 'Vigilante Shit', 'Album': 'Midnights'}, {'Title': 'Bejeweled', 'Album': 'Midnights'}, {'Title': 'Labyrinth', 'Album': 'Midnights'}, {'Title': 'Karma', 'Album': 'Midnights'}, {'Title': 'Sweet Nothing', 'Album': 'Midnights'}, {'Title': 'Mastermind', 'Album': 'Midnights'}, {'Title': 'The Great War', 'Album': 'Midnights', 'bonus': True}, {'Title': 'Bigger Than The Whole Sky', 'Album': 'Midnights', 'bonus': True}, {'Title': 'Paris', 'Album': 'Midnights', 'bonus': True}, {'Title': 'High Infidelity', 'Album': 'Midnights', 'bonus': True}, {'Title': 'Glitch', 'Album': 'Midnights', 'bonus': True}, {'Title': "Would've, Could've, Should've", 'Album': 'Midnights', 'bonus': True}, {'Title': 'Dear Reader', 'Album': 'Midnights', 'bonus': True}, {'Title': "You're Losing Me", 'Album': 'Midnights', 'bonus': True}, {'Title': 'Hits Different', 'Album': 'Midnights', 'bonus': True}, {'Title': 'Carolina', 'Album': 'none'}, {'Title': 'Christmas Tree Farm', 'Album': 'none'}, {'Title': 'Only the Young', 'Album': 'none'}, {'Title': "I Don't Wanna Live Forever", 'Album': 'none', 'ft': 'Zayn'}, {'Title': 'Beautiful Ghosts', 'Album': 'none'}, {'Title': 'Safe and Sound', 'Album': 'none', 'ft': 'The Civil Wars'}, {'Title': 'Eyes Open', 'Album': 'none'}, {'Title': 'Two Is Better Than One', 'Album': 'feature', 'ft': 'Boys Like Girls'}, {'Title': "Highway Don't Care", 'Album': 'feature', 'ft': 'Tim McGraw'}, {'Title': 'Half of My Heart', 'Album': 'feature', 'ft': 'John Mayer'}, {'Title': 'Both of Us', 'Album': 'feature', 'ft': 'B.o.B.'}, {'Title': 'The Joker and the Queen', 'Album': 'feature', 'ft': 'Ed Sheeran'}, {'Title': 'Gasoline', 'Album': 'feature', 'ft': 'HAIM'}, {'Title': 'Renegade', 'Album': 'feature', 'ft': 'Big Red Machine'}, {'Title': 'Birch', 'Album': 'feature', 'ft': 'Big Red Machine'}, {'Title': 'The Alcott', 'Album': 'feature', 'ft': 'The National'}
+            {'Title': 'Tim McGraw', 'Album': 'TS', 'index': 1},  
+            {'Title': 'Picture to Burn', 'Album': 'TS', 'index': 2},  
+            {'Title': 'Teardrops on My Guitar', 'Album': 'TS', 'index': 3},  
+            {'Title': 'A Place in This World', 'Album': 'TS', 'index': 4},  
+            {'Title': 'Cold As You', 'Album': 'TS', 'index': 5},  
+            {'Title': 'The Outside', 'Album': 'TS', 'index': 6},  
+            {'Title': 'Tied Together with a Smile', 'Album': 'TS', 'index': 7},  
+            {'Title': 'Stay Beautiful', 'Album': 'TS', 'index': 8},  
+            {'Title': "Should've Said No", 'Album': 'TS', 'index': 9},  
+            {'Title': "Mary's Song (Oh My My My)", 'Album': 'TS', 'index': 10},  
+            {'Title': 'Our Song', 'Album': 'TS', 'index': 11},  
+            {'Title': "I'm Only Me When I'm With You", 'Album': 'TS', 'bonus': True, 'index': 12},  
+            {'Title': 'Invisible', 'Album': 'TS', 'bonus': True, 'index': 13},  
+            {'Title': 'A Perfectly Good Heart', 'Album': 'TS', 'bonus': True, 'index': 14},  
+            {'Title': 'I Heart ?', 'Album': 'TS', 'bonus': True, 'spotify':False}, 
+            
+            {'Title': 'Fearless', 'Album': 'Fearless', 'index': 1},  
+            {'Title': 'Fifteen', 'Album': 'Fearless', 'index': 2},  
+            {'Title': 'Love Story', 'Album': 'Fearless', 'index': 3},  
+            {'Title': 'Hey Stephen', 'Album': 'Fearless', 'index': 4},  
+            {'Title': 'White Horse', 'Album': 'Fearless', 'index': 5},  
+            {'Title': 'You Belong with Me', 'Album': 'Fearless', 'index': 6},  
+            {'Title': 'Breathe', 'Album': 'Fearless', 'ft': 'Colbie Caillat', 'index': 7},  
+            {'Title': 'Tell Me Why', 'Album': 'Fearless', 'index': 8},  
+            {'Title': "You're Not Sorry", 'Album': 'Fearless', 'index': 9}, 
+            {'Title': 'The Way I Loved You', 'Album': 'Fearless', 'index': 10},  
+            {'Title': 'Forever & Always', 'Album': 'Fearless', 'index': 11},  
+            {'Title': 'The Best Day', 'Album': 'Fearless', 'index': 12},  
+            {'Title': 'Change', 'Album': 'Fearless', 'index': 13},  
+            {'Title': 'Jump Then Fall', 'Album': 'Fearless', 'bonus': True, 'index': 14},  
+            {'Title': 'Untouchable', 'Album': 'Fearless', 'bonus': True, 'index': 15},  
+            {'Title': 'Come In with the Rain', 'Album': 'Fearless', 'bonus': True, 'index': 17},  
+            {'Title': 'Superstar', 'Album': 'Fearless', 'bonus': True, 'index': 18},  
+            {'Title': 'The Other Side of the Door', 'Album': 'Fearless', 'bonus': True, 'index': 19},  
+            {'Title': 'Today Was  Fairytale', 'Album': 'Fearless', 'bonus': True, 'index': 20},  
+            {'Title': 'You All Over Me', 'Album': 'Fearless', 'ft': 'Maren Morris', 'vault': True, 'index': 21},  
+            {'Title': 'Mr. Perfectly Fine', 'Album': 'Fearless', 'vault': True, 'index': 22},  
+            {'Title': 'We Were Happy', 'Album': 'Fearless', 'vault': True, 'index': 23},  
+            {'Title': "That's When", 'Album': 'Fearless', 'ft': 'Keith Urban', 'vault': True, 'index': 24},  
+            {'Title': "Don't You", 'Album': 'Fearless', 'vault': True, 'index': 25},  
+            {'Title': 'Bye Bye Baby', 'Album': 'Fearless', 'vault': True, 'index': 26},  
+
+            {'Title': 'Mine', 'Album': 'Speak Now', 'index': 1},  
+            {'Title': 'Sparks Fly', 'Album': 'Speak Now', 'index': 2},  
+            {'Title': 'Back to December', 'Album': 'Speak Now', 'index': 3},  
+            {'Title': 'Speak Now', 'Album': 'Speak Now', 'index': 4},  
+            {'Title': 'Dear John', 'Album': 'Speak Now', 'index': 5},  
+            {'Title': 'Mean', 'Album': 'Speak Now', 'index': 6},  
+            {'Title': 'The Story of Us', 'Album': 'Speak Now', 'index': 7},  
+            {'Title': 'Never Grow Up', 'Album': 'Speak Now', 'index': 8},  
+            {'Title': 'Enchanted', 'Album': 'Speak Now', 'index': 9},  
+            {'Title': 'Better than Revenge', 'Album': 'Speak Now', 'index': 10},  
+            {'Title': 'Innocent', 'Album': 'Speak Now', 'index': 11},  
+            {'Title': 'Haunted', 'Album': 'Speak Now', 'index': 12},  
+            {'Title': 'Last Kiss', 'Album': 'Speak Now', 'index': 13},  
+            {'Title': 'Long Live', 'Album': 'Speak Now', 'index': 14},  
+            {'Title': 'Ours', 'Album': 'Speak Now', 'bonus': True, 'index': 15},  
+            {'Title': 'Superman', 'Album': 'Speak Now', 'bonus': True, 'index': 17},  
+            {'Title': 'Electric Touch', 'Album': 'Speak Now', 'ft': 'Fall Out Boy', 'vault': True, 'spotify': False},  
+            {'Title': 'When Emma Falls In Love', 'Album': 'Speak Now', 'vault': True, 'spotify': False},  
+            {'Title': 'I Can See You', 'Album': 'Speak Now', 'vault': True, 'spotify': False},  
+            {'Title': 'Castles Crumbling', 'Album': 'Speak Now', 'ft': 'Paramore', 'vault': True, 'spotify': False},  
+            {'Title': 'Foolish One', 'Album': 'Speak Now', 'vault': True, 'spotify': False},  
+            {'Title': 'Timeless', 'Album': 'Speak Now', 'vault': True, 'spotify': False},  
+
+            {'Title': 'State of Grace', 'Album': 'Red', 'index': 1},  
+            {'Title': 'Red', 'Album': 'Red', 'index': 2},  
+            {'Title': 'Treacherous', 'Album': 'Red', 'index': 3},  
+            {'Title': 'I Knew You Were Trouble', 'Album': 'Red', 'index': 4},  
+            {'Title': 'All Too Well (10 Minute Version)', 'Album': 'Red', 'index': 30},  
+            {'Title': '22', 'Album': 'Red', 'index': 6},  
+            {'Title': 'I Almost Do', 'Album': 'Red', 'index': 7},  
+            {'Title': 'We Are Never Ever Getting Back Together', 'Album': 'Red', 'index': 8},  
+            {'Title': 'Stay Stay Stay', 'Album': 'Red', 'index': 9},  
+            {'Title': 'The Last Time', 'Album': 'Red', 'ft': 'Gary Lightbody', 'index': 10},  
+            {'Title': 'Holy Ground', 'Album': 'Red', 'index': 11},  
+            {'Title': 'Sad Beautiful Tragic', 'Album': 'Red', 'index': 12},  
+            {'Title': 'The Lucky One', 'Album': 'Red', 'index': 13},  
+            {'Title': 'Everything Has Changed', 'Album': 'Red', 'ft': 'Ed Sheeran', 'index': 14},  
+            {'Title': 'Starlight', 'Album': 'Red', 'index': 15},  
+            {'Title': 'Begin Again', 'Album': 'Red', 'index': 16},  
+            {'Title': 'The Moment I Knew', 'Album': 'Red', 'bonus': True, 'index': 17},  
+            {'Title': 'Come Back... Be Here', 'Album': 'Red', 'bonus': True, 'index': 18},  
+            {'Title': 'Girl at Home', 'Album': 'Red', 'bonus': True, 'index': 19},  
+            {'Title': 'Ronan', 'Album': 'Red', 'bonus': True, 'index': 21},  
+            {'Title': 'Better Man', 'Album': 'Red', 'vault': True, 'index': 22},  
+            {'Title': 'Nothing New', 'Album': 'Red', 'ft': 'Phoebe Bridgers', 'vault': True, 'index': 23},  
+            {'Title': 'Babe', 'Album': 'Red', 'vault': True, 'index': 24},  
+            {'Title': 'Message in a Bottle', 'Album': 'Red', 'vault': True, 'index': 25},  
+            {'Title': 'I Bet You Think About Me', 'Album': 'Red', 'ft': 'Chris Stapleton', 'vault': True, 'index': 26},  
+            {'Title': 'Forever Winter', 'Album': 'Red', 'vault': True, 'index': 27},  
+            {'Title': 'Run', 'Album': 'Red', 'ft': 'Ed Sheeran', 'vault': True, 'index': 28},  
+            {'Title': 'The Very First Night', 'Album': 'Red', 'vault': True, 'index': 29},  
+
+            {'Title': 'Welcome to New York', 'Album': '1989', 'index': 1},  
+            {'Title': 'Blank Space', 'Album': '1989', 'index': 2},  
+            {'Title': 'Style', 'Album': '1989', 'index': 3},  
+            {'Title': 'Out of the Woods', 'Album': '1989', 'index': 4},  
+            {'Title': 'All You Had to Do Was Stay', 'Album': '1989', 'index': 5},  
+            {'Title': 'Shake it Off', 'Album': '1989', 'index': 6},  
+            {'Title': 'I Wish You Would', 'Album': '1989', 'index': 7},  
+            {'Title': 'Bad Blood', 'Album': '1989', 'index': 8},  
+            {'Title': 'Wildest Dreams', 'Album': '1989', 'index': 9},  
+            {'Title': 'How You Get the Girl', 'Album': '1989', 'index': 10},  
+            {'Title': 'This Love', 'Album': '1989', 'index': 11},  
+            {'Title': 'I Know Places', 'Album': '1989', 'index': 12},  
+            {'Title': 'Clean', 'Album': '1989', 'index': 13},  
+            {'Title': 'Wonderland', 'Album': '1989', 'bonus': True, 'index': 14},  
+            {'Title': 'You Are in Love', 'Album': '1989', 'bonus': True, 'index': 15},  
+            {'Title': 'New Romantics', 'Album': '1989', 'bonus': True, 'index': 16},  
+
+            {'Title': 'Ready for It?', 'Album': 'reputation', 'index': 1},  
+            {'Title': 'End Game', 'Album': 'reputation', 'ft': 'Ed Sheeran', 'index': 2},  
+            {'Title': 'I Did Something Bad', 'Album': 'reputation', 'index': 3},  
+            {'Title': "Don't Blame Me", 'Album': 'reputation', 'index': 4},  
+            {'Title': 'Delicate', 'Album': 'reputation', 'index': 5},  
+            {'Title': 'Look What You Made Me Do', 'Album': 'reputation', 'index': 6},  
+            {'Title': 'So It Goes...', 'Album': 'reputation', 'index': 7},  
+            {'Title': 'Gorgeous', 'Album': 'reputation', 'index': 8},  
+            {'Title': 'Getaway Car', 'Album': 'reputation', 'index': 9},  
+            {'Title': 'King of My Heart', 'Album': 'reputation', 'index': 10},  
+            {'Title': 'Dancing with Our Hands Tied', 'Album': 'reputation', 'index': 11},  
+            {'Title': 'Dress', 'Album': 'reputation', 'index': 12},  
+            {'Title': "This Is Why We Can't Have Nice Things", 'Album': 'reputation', 'index': 13},  
+            {'Title': 'Call It What You Want', 'Album': 'reputation', 'index': 14},  
+            {'Title': "New Year's Day", 'Album': 'reputation', 'index': 15},  
+
+            {'Title': 'I Forgot That You Existed', 'Album': 'Lover', 'index': 1},  
+            {'Title': 'Cruel Summer', 'Album': 'Lover', 'index': 2},  
+            {'Title': 'Lover', 'Album': 'Lover', 'index': 3},  
+            {'Title': 'The Man', 'Album': 'Lover', 'index': 4},  
+            {'Title': 'The Archer', 'Album': 'Lover', 'index': 5},  
+            {'Title': 'I Think He Knows', 'Album': 'Lover', 'index': 6},  
+            {'Title': 'Miss Americana & The Heartbreak Prince', 'Album': 'Lover', 'index': 7},  
+            {'Title': 'Paper Rings', 'Album': 'Lover', 'index': 8},  
+            {'Title': 'Cornelia Street', 'Album': 'Lover', 'index': 9},  
+            {'Title': 'Death by a Thousand Cuts', 'Album': 'Lover', 'index': 10},  
+            {'Title': 'London Boy', 'Album': 'Lover', 'index': 11},  
+            {'Title': "Soon You'll Get Better", 'Album': 'Lover', 'ft': 'The Chicks', 'index': 12},  
+            {'Title': 'False God', 'Album': 'Lover', 'index': 13},  
+            {'Title': 'You Need to Calm Down', 'Album': 'Lover', 'index': 14},  
+            {'Title': 'Afterglow', 'Album': 'Lover', 'index': 15},  
+            {'Title': 'ME!', 'Album': 'Lover', 'ft': 'Brendan Urie', 'index': 16},  
+            {'Title': "It's Nice to Have a Friend", 'Album': 'Lover', 'index': 17},  
+            {'Title': 'Daylight', 'Album': 'Lover', 'index': 18}, 
+
+            {'Title': 'the 1', 'Album': 'folklore', 'index':1 },  
+            {'Title': 'cardigan', 'Album': 'folklore', 'index': 2},  
+            {'Title': 'the last great american dynasty', 'Album': 'folklore', 'index': 3},  
+            {'Title': 'exile', 'Album': 'folklore', 'ft': 'Bon Iver', 'index':4 },  
+            {'Title': 'my tears ricochet', 'Album': 'folklore', 'index': 5},  
+            {'Title': 'mirrorball', 'Album': 'folklore', 'index':6},  
+            {'Title': 'seven', 'Album': 'folklore', 'index': 7},  
+            {'Title': 'august', 'Album': 'folklore', 'index': 8},  
+            {'Title': 'this is me trying', 'Album': 'folklore', 'index': 9},  
+            {'Title': 'illicit affairs', 'Album': 'folklore', 'index': 10},  
+            {'Title': 'invisible string', 'Album': 'folklore', 'index': 11},  
+            {'Title': 'mad woman', 'Album': 'folklore', 'index': 12},  
+            {'Title': 'epiphany', 'Album': 'folklore', 'index': 13},  
+            {'Title': 'betty', 'Album': 'folklore', 'index': 14},  
+            {'Title': 'peace', 'Album': 'folklore', 'index': 15},  
+            {'Title': 'hoax', 'Album': 'folklore', 'index': 16},  
+            {'Title': 'the lakes', 'Album': 'folklore', 'bonus': True, 'index': 17},  
+
+            {'Title': 'willow', 'Album': 'evermore', 'index': 1},  
+            {'Title': 'champagne problems', 'Album': 'evermore', 'index': 2},  
+            {'Title': 'gold rush', 'Album': 'evermore', 'index': 3},  
+            {'Title': "'tis the damn season", 'Album': 'evermore', 'index': 4},  
+            {'Title': 'tolerate it', 'Album': 'evermore', 'index': 5},  
+            {'Title': 'no body, no crime', 'Album': 'evermore', 'ft': 'HAIM', 'index': 6},  
+            {'Title': 'happiness', 'Album': 'evermore', 'index': 7},  
+            {'Title': 'dorothea', 'Album': 'evermore', 'index': 8},  
+            {'Title': 'coney island', 'Album': 'evermore', 'ft': 'The National', 'index': 9},  
+            {'Title': 'ivy', 'Album': 'evermore', 'index': 10},  
+            {'Title': 'cowboy like me', 'Album': 'evermore', 'index': 11},  
+            {'Title': 'long story short', 'Album': 'evermore', 'index': 12},  
+            {'Title': 'marjorie', 'Album': 'evermore', 'index': 13},  
+            {'Title': 'closure', 'Album': 'evermore', 'index': 14},  
+            {'Title': 'evermore', 'Album': 'evermore', 'ft': 'Bon Iver', 'index': 15},  
+            {'Title': 'right where you left me', 'Album': 'evermore', 'bonus': True, 'index': 16},  
+            {'Title': "it's time to go", 'Album': 'evermore', 'bonus': True, 'index': 17},  
+
+            {'Title': 'Lavender Haze', 'Album': 'Midnights', 'index': 1}, 
+            {'Title': 'Maroon', 'Album': 'Midnights', 'index': 2}, 
+            {'Title': 'Anti-Hero', 'Album': 'Midnights', 'index': 3},  
+            {'Title': 'Snow On The Beach', 'Album': 'Midnights', 'index': 22}, 
+            {'Title': "You're On Your Own, Kid", 'Album': 'Midnights', 'index': 5},  
+            {'Title': 'Midnight Rain', 'Album': 'Midnights', 'index': 6},  
+            {'Title': 'Question...?', 'Album': 'Midnights', 'index': 7}, 
+            {'Title': 'Vigilante Shit', 'Album': 'Midnights', 'index': 8},  
+            {'Title': 'Bejeweled', 'Album': 'Midnights', 'index': 9},  
+            {'Title': 'Labyrinth', 'Album': 'Midnights', 'index': 10},  
+            {'Title': 'Karma', 'Album': 'Midnights', 'index': 23},  
+            {'Title': 'Sweet Nothing', 'Album': 'Midnights', 'index': 12},  
+            {'Title': 'Mastermind', 'Album': 'Midnights', 'index': 13},  
+            {'Title': 'The Great War', 'Album': 'Midnights', 'bonus': True, 'index': 14},  
+            {'Title': 'Bigger Than The Whole Sky', 'Album': 'Midnights', 'bonus': True, 'index': 15},  
+            {'Title': 'Paris', 'Album': 'Midnights', 'bonus': True, 'index': 16},  
+            {'Title': 'High Infidelity', 'Album': 'Midnights', 'bonus': True, 'index': 17},  
+            {'Title': 'Glitch', 'Album': 'Midnights', 'bonus': True, 'index': 18},  
+            {'Title': "Would've, Could've, Should've", 'Album': 'Midnights', 'bonus': True, 'index': 19},  
+            {'Title': 'Dear Reader', 'Album': 'Midnights', 'bonus': True, 'index': 20},  
+            {'Title': 'Hits Different', 'Album': 'Midnights', 'bonus': True, 'index': 21},  
+
+            {'Title': 'Carolina', 'Album':'none', 'id': '4axSuOg3BqsowKjRpj59RU'}, 
+            {'Title': 'Christmas Tree Farm', 'Album': 'none', 'id':'2mvabkN1i2gLnGAPUVdwek'}, 
+            {'Title': 'Only the Young', 'Album': '2slqvGLwzZZYsT4K4Y1GBC'}, 
+            {'Title': "I Don't Wanna Live Forever", 'Album': 'none', 'ft': 'Zayn', 'id':'2y5aJvzXhHPA94U5GFAcXe'}, 
+            {'Title': 'Beautiful Ghosts', 'Album': 'none', 'id':'2evEoQAhIMaa9PfjTT5skG'}, 
+            {'Title': 'Safe and Sound', 'Album': 'none', 'ft': 'The Civil Wars', 'id': '2RJnNdu4pb3MypbBroHU0T'}, 
+            {'Title': 'Eyes Open', 'Album': 'none', 'id': '2NIBaWXdjaTDmytjjwbEfP'}, 
+            {'Title': 'If This Was a Movie', 'Album': 'none', 'id': '0kAZ3H6G9Zac4PMpmobMkj'},  
+            {'Title': 'Two Is Better Than One', 'Album': 'none', 'ft': 'Boys Like Girls', 'id': '1MaqkdFNIKPdpQGDzme5ss'}, 
+            {'Title': "Highway Don't Care", 'Album': 'none', 'ft': 'Tim McGraw', 'id': '4wFUdSCer8bdQsrp1M90sa'}, 
+            {'Title': 'Half of My Heart', 'Album': 'none', 'ft': 'John Mayer', 'id': '7hR5toSPEgwFZ78jfHdANM'}, 
+            {'Title': 'Both of Us', 'Album': 'none', 'ft': 'B.o.B.', 'id': '3r9bgSJlJz2zlevcBRYXko'}, 
+            {'Title': 'The Joker and the Queen', 'Album': 'none', 'ft': 'Ed Sheeran', 'id': '6N1K5OVVCopBjGViHs2IvP'}, 
+            {'Title': 'Gasoline', 'Album': 'none', 'ft': 'HAIM', 'id': '645Exr2lJIO45Guht3qyIa'}, 
+            {'Title': 'Renegade', 'Album': 'none', 'ft': 'Big Red Machine', 'id': '73W5aXorr5vxrySFcoZqIN'}, 
+            {'Title': 'Birch', 'Album': 'none', 'ft': 'Big Red Machine', 'id': '7wo2UNeQBowm28hfAJsEMz'}, 
+            {'Title': 'The Alcott', 'Album': 'none', 'ft': 'The National', 'id': '6INztpNwOTlfSKTuPo0HOP'}
+
 ]
 
 width = get_monitors()[0].width 
@@ -36,21 +266,21 @@ songgroups.append(cat)
 def buildLayout(songgroups, song):
     layout = [[],[]]
     layout[0].append([sg.Text("Where does", text_color="black", background_color='white', font='Courier 24'),
-                      sg.Button(song["Title"], key='_song_',font='Courier 24', button_color=albumcolors.get(song["Album"], DEFAULT_COLOR)),
+                      sg.Button(song["Title"], key=spotify_functions.songid(song),font='Courier 24', button_color=albumcolors.get(song["Album"], DEFAULT_COLOR)),
                       sg.Text("belong?", font='Courier 24', background_color='white', text_color="black")])
     for sgi in range(len(songgroups)):
         songgroup = songgroups[sgi]
-        col = [[sg.Button(str(sgi+1), font='Courier 24')]]
-        for song in songgroup:
+        col = [[sg.Button(' '+str(sgi+1), font='Courier 24')]]
+        for colsong in songgroup:
             songitem = []
             #songitem.append(sg.Image(filename='/Users/ctgray3/Desktop/TS.png'))
-            songitem.append(sg.Button(song["Title"], key=spotify_functions.prepare_spotify_query(song), size=(32, 1), font='Courier 18', button_color=albumcolors.get(song["Album"], DEFAULT_COLOR), pad=(5,5)))
+            songitem.append(sg.Button(colsong["Title"], key=spotify_functions.songid(colsong), size=(32, 1), font='Courier 18', button_color=albumcolors.get(colsong["Album"], DEFAULT_COLOR), pad=(5,5)))
             col.append(songitem)
         layout[1].append(sg.Column(col,vertical_alignment="TOP", background_color='white'))
         layout[1].append(sg.VerticalSeparator())
     col = [[sg.Button("new", font='Courier 24')]]
     layout[1].append(sg.Column(col, vertical_alignment="TOP"))
-    choices = [sg.Button("IDK", font='Courier 18'),
+    choices = [sg.Button("IDK", font='Courier 18', border_width=0),
                sg.Button("save&quit", font='Courier 18')]
     layout.append(choices)
     return layout
@@ -67,7 +297,10 @@ while True:
     # presses the OK button
     if event==sg.WIN_CLOSED:
         break
-    if event:
+    if len(event)==22:
+        print(event)
+        spotify_functions.open_song(event)
+    else:
         if event=="IDK":
             print("didn't know the song")
         elif event=="new":
@@ -75,15 +308,9 @@ while True:
         elif event == "save&quit":
             print(songgroups)
             break
-        elif event == '_song_':
-            print(spotify_functions.open_song(song=song))
-            continue
-        else:
-            try:
-                int(event)
-                songgroups[int(event) - 1].append(song)
-            except:
-                print(spotify_functions.open_song(query=event))
+        elif event[0]==' ':
+            songgroups[int(event[1:]) - 1].append(song)
+            #spotify_functions.open_song(event)
         window.close()
         n = random.randint(0, len(unsorted))
         song = unsorted.pop(n)

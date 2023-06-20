@@ -3,8 +3,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import webbrowser
 
-SPOTIFY_ID = os.environ.get('SPOTIFY_CLIENT_ID')
-SPOTIFY_SECRET = os.environ.get('SPOTIFY_CLIENT_SECRET')
+SPOTIFY_ID = '78c4c1fc79184a1d88c9b737eb10c00a'
+SPOTIFY_SECRET = '324b59e085114c728947f7a4ab2f2481'
 redirect_uri = 'http://google.com/callback/'
 
 
@@ -25,10 +25,11 @@ def prepare_spotify_query(song):
         return f"{query_base}album:{album_name.replace(' ', '%20')}"
 
 
-def open_song(song):
+def open_song(song='', query=''):
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIFY_ID,
                                                                client_secret=SPOTIFY_SECRET))
-    query = prepare_spotify_query(song)
+    if query == '':
+        query = prepare_spotify_query(song)
     results = sp.search(query, 1, 0, "track")
     try:
         webbrowser.open(results['tracks']['items'][0]['external_urls']['spotify'], new=0)
